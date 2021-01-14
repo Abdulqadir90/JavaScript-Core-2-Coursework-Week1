@@ -59,6 +59,10 @@ Exercise 1:
 
   "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 */
+let sensitiveInfo = writers.forEach((people) => {
+  console.log("Hi, my name is ${people}firstName} ${people.lastName}. I am ${people.age} years old, and work as a ${people.occupation}.")
+})
+
 
 /*
 Exercise 2:
@@ -68,6 +72,13 @@ Exercise 2:
 
   "Writer {firstName} {lastName} died at {age} years old."
 */
+let aged40AndDead = writers.filter((people) => {
+  if (people.age >= 40 && people.age < 50 && people.alive === "false"){
+    return console.log("Writer ${people.firstName} ${people.lastName} died at ${people.age} years old");
+  }
+
+});
+
 
 /*
 Exercise 3:
