@@ -60,7 +60,7 @@ Exercise 1:
   "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 */
 let sensitiveInfo = writers.forEach((people) => {
-  console.log("Hi, my name is ${people}firstName} ${people.lastName}. I am ${people.age} years old, and work as a ${people.occupation}.")
+  console.log("Hi, my name is ${people}firstName} ${people.lastName}. I am ${people.age} years old, and work as a ${people.occupation}.");
 })
 
 
@@ -77,7 +77,7 @@ let aged40AndDead = writers.filter((people) => {
     return console.log("Writer ${people.firstName} ${people.lastName} died at ${people.age} years old");
   }
 
-});
+})
 
 
 /*
@@ -87,3 +87,9 @@ Exercise 3:
 
   "Hi, my name is {firstName} {lastName}. I am {age} years old."
 */
+
+let aliveWritersIn40s = writers.filter((people) => {
+  if(people.age >= 40 && people.age < 50 && people.alive === "true"){
+    return console.log("Hi, my name is ${people.firstName} ${people.lastName} I am ${people.age} years old.");
+  }
+})
