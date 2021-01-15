@@ -74,7 +74,7 @@ Exercise 2:
 */
 let aged40AndDead = writers.filter((people) => {
   if (people.age >= 40 && people.age < 50 && people.alive === "false"){
-    console.log(`Writer ${people.firstName} ${people.lastName} died at ${people.age} years old`);
+    console.log(`Writer ${people.firstName} ${people.lastName} died at ${people.age} years old`); 
   }
 })
 
