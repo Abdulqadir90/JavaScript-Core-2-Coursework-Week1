@@ -87,7 +87,7 @@ Exercise 3:
   "Hi, my name is {firstName} {lastName}. I am {age} years old."
 */
 
-let aliveWritersIn40s = writers.filter((people) => {
+let aliveWritersIn40s = writers.filter((people) => { 
   if(people.age >= 40 && people.age < 50 && people.alive === "true"){
     console.log(`"Hi, my name is ${people.firstName} ${people.lastName} I am ${people.age} years old.`);
   }
