@@ -52,7 +52,7 @@ let bottle = {
   },
   isEmpty: function () {
     // this function should return true if your bottle is empty;
-    return this.volume === 0;
+    return this.volume === 0; 
   },
 };
 
