@@ -399,9 +399,8 @@ Next, I want you to find all of the people who work for "POWERNET" and then stor
 
 */
 
-let powerNetEmails = people.map((human) => {
+let powerNetEmails = people.filter((human) => {
   if(human.company === "POWERNET"){
-    console.log('email', human.email);
     return human.email;
   }
 })
@@ -419,8 +418,8 @@ This time, I only want the full names of the people are who friends with her.
 */
 
 let friendsWithStacie = people.filter((human) => {
-  if(human.name === "friends"){
-    return human.name.friends;
+  if(human.name === "Stacie Villarreal"){
+    return human.friends;
   }
 })
 
