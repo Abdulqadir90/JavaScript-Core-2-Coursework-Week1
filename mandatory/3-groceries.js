@@ -67,4 +67,4 @@ for(n in weeklyMealPlan){
   numberOfItemsPerWeek[n] = weeklyMealPlan[n].length;
 }
 
-console.log(numberOfItemsPerWeek); 
+console.log(numberOfItemsPerWeek);  
