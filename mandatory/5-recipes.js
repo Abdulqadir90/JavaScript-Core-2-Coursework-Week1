@@ -55,7 +55,7 @@ let recipes = [
 
         let food = recipes.forEach((value) => {
             console.log(`${value.title} ${value.servings} ${value.ingredients}`);
-        })
+        }) 
       
 
 
