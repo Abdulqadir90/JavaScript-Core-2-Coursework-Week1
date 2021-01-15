@@ -419,7 +419,7 @@ This time, I only want the full names of the people are who friends with her.
 
 let friendsWithStacie = people.filter((human) => {
   if(human.name === "Stacie Villarreal"){
-    return human.friends; 
+    return human.friends;   
   }
 })
 
