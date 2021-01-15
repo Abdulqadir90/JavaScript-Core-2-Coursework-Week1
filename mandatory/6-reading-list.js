@@ -29,27 +29,27 @@ let books = [
     {
         Title: "The Hobbit",
         author: "J.R.R. Tolkien",
-        Reading: ["false"],
+        Reading: true,
       },
       {
         Title: "The Compound Effect",
         author: "Darren Hardy",
-        Reading: ["true"],
+        Reading: true,
       },
       {
         Title: "Think and Grow Rich",
         author: "Napoleon Hill",
-        Reading: ["false"],
+        Reading: true,
       },
       {
         Title: "How To Win Friends And Influence People",
         author: "Dale Carnegie",
-        Reading: ["false"],
+        Reading: false,
       },
       {
         Title: "The Power Of Habit",
         author: "Charles Duhigg",
-        reading: ["true"],
+        reading: true,
       },
 
     ];
@@ -62,11 +62,11 @@ let books = [
 
       let nn = books.forEach((value) => {
         if(value.reading === true){
-          console.log(`you have already read ${value.title} by ${value.author}`);
+          console.log(`you have already read ${value.Title} by ${value.author}`);
         } else {
-          console.log(`you still need to read ${value.title} by ${value.author}`);
+          console.log(`you still need to read ${value.Title} by ${value.author}`);
         }
-      });
+      })
 
 
 
