@@ -399,11 +399,11 @@ Next, I want you to find all of the people who work for "POWERNET" and then stor
 
 */
 
-let powerNetEmails = people.filter((human) => {
-  if(human.company === "POWERNET"){
-    return human.email;
-  }
-})
+
+let powerNetEmails = Object.values(people).filter(human => human.company === "POWERNET").map(human => human.email).sort();
+  
+  
+
 
 /*
 
@@ -418,9 +418,8 @@ This time, I only want the full names of the people are who friends with her.
 */
 
 let friendsWithStacie = people.filter((human) => {
-  if(human.name === "Stacie Villarreal"){
-    return human.friends;   
-  }
+  if(human.friends.some === "Stacie Villarreal")
+  return human.friends;
 })
 
 
